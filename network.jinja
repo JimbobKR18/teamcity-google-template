@@ -19,7 +19,7 @@ resources:
 - name: {{ BASE_NAME }}
   type: compute.v1.network
   properties:
-    IPv4Range: 10.240.0.0/16
+    autoCreateSubnetworks: true
 
 - name: {{ BASE_NAME }}-allow-http
   type: compute.v1.firewall
